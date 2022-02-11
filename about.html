@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <title>About Haskell</title>
+    </head>
+    <body>
+        <nav>
+            <a href="./index.html">Home</a> |
+            <a href="./get_started.html">Get Started</a> |
+            <a href="./about.html">About</a> |
+            <a href="./jargon.html">Jargon</a> |
+            <a href="./learn_more.html">Learn More</a> |
+            <a href="./participate.html">Participate</a>
+        </nav>
+        <h1>Haskell</h1>
+        <p>
+            Haskell is a purely functional programming language developed for scientific purpose (research in
+            programming language and type theory), initially. Nowadays,
+            companies like Facebook and Github are using Haskell to handle spamming and to analyze code written in other
+            programming languages.
+        </p>
+        <h2>It's Name</h2>
+        <p>
+            Haskell is named after a famous logician Haskell Curry. Interestingly, his last name is also used to name a
+            programming language. He is so famous that useful concepts of functional programming (like currying, uncurrying) is named after him.
+        </p>
+        <h2>Functional Programming</h2>
+        <p>
+            There are two programming paradigms: imperative programming and functional programming. Though the line
+            between these two paradigms is not clear. For example, lambda expression (or closure), the fundamental of functional
+            programming can be found in basically all mainstream programming languages. Higher-order functions like
+            <code>map</code> and <code>filter</code> can be easily used in Python and JavaScript.
+            <table>
+                <thead>
+                    <tr>
+                        <th>Famous Functional Programming Langauges</th>
+                        <th>Famous Imperative Programming Langauges</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Haskell</td>
+                        <td>C/C++</td>
+                    </tr>
+                    <tr>
+                        <td>OCaml</td>
+                        <td>Java</td>
+                    </tr>
+                    <tr>
+                        <td>ML</td>
+                        <td>Python</td>
+                    </tr>
+                    <tr>
+                        <td>Lisp</td>
+                        <td>JavaScript</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>Lambda Calculus</h3>
+            As mentioned above, lambda calculus is the fundamental of functional programming. The idea is simple. A
+            function in lambda calculus is defined with a body (expression) and a parameter. We can apply the function to an
+            argument. The application process essentially substitutes the variable with the same name as the parameter
+            in the function body with the value to which the function is applied. For example, suppose we have a function
+            <pre>
+                <code>
+                    λx.(x + x)
+                </code>
+            </pre>
+            Then, applying this function to 1 results in
+            <pre>
+                <code>
+                    λx.(x + x) => 1 + 1 => 2.
+                </code>
+            </pre>
+            Lambda function implies that same input always produces the same output (since there is no side effect).
+            <h3>Type</h3>
+            Another fact about Haskell is that it has a safe type system. Each function in Haskell is associated with a
+            type signature, which defined the domain and the range of the calculation. For example, the addition
+            function, <code>add</code>, that adds two numbers, <code>a</code> and <code>b</code>, together is written as
+            <code>add a b = a + b</code> in Haskell. And this function has a type of <code>Int -> Int -> Int</code>,
+            indicating that the two arguments of this function have a type of <code>Int</code> and the result of this.
+            function is also of type <code>Int</code>. If you apply a function with a different type, say you String,
+            the compiler of Haskell can find this error and tell you that you need to fix it. Programming languages like
+            JavaScript and Python (if not type annotated) does not have this feature. Programming languages like C/C++
+            and Java may implicitly convert a type into another type. They are not safe. The latter may sound considerate,
+            but may lead to an expected behavior.
+        </p>
+    </body>
+</html>
